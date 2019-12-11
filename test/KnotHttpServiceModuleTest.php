@@ -5,13 +5,13 @@ namespace KnotModule\KnotHttpService\Test;
 
 use PHPUnit\Framework\TestCase;
 
-use KnotModule\NyholmPsr7\NyholmPsr7RequestModule;
 use KnotLib\HttpService\CookieService;
 use KnotLib\HttpService\DI;
 use KnotLib\HttpService\SessionService;
-use KnotModule\KnotDi\KnotDiModule;
 
-use KnotModule\KnotHttpService\KnotHttpServiceModule;
+use KnotPhp\Module\KnotDi\KnotDiModule;
+use KnotPhp\Module\NyholmPsr7\NyholmPsr7RequestModule;
+use KnotPhp\Module\KnotHttpService\KnotHttpServiceModule;
 
 class KnotHttpServiceModuleTest extends TestCase
 {
