@@ -28,7 +28,6 @@ class KnotHttpServiceModule extends ComponentModule
         return [
             Components::DI,
             Components::EVENTSTREAM,
-            Components::RESPONSE,
             Components::SESSION,
         ];
     }
@@ -58,12 +57,12 @@ class KnotHttpServiceModule extends ComponentModule
             $c = $app->di();
 
             // services.cookie factory
-            $c[DI::SERVICE_COOKIE] = function(){
+            $c[DI::URI_SERVICE_COOKIE] = function(){
                 return new CookieService();
             };
 
             // services.session factory
-            $c[DI::SERVICE_SESSION] = function() use($session){
+            $c[DI::URI_SERVICE_SESSION] = function() use($session){
                 return new SessionService($session);
             };
 

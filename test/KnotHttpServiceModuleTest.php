@@ -28,8 +28,8 @@ class KnotHttpServiceModuleTest extends TestCase
 
         $di = $app->di();
 
-        $this->assertInstanceOf(CookieService::class, $di[DI::SERVICE_COOKIE]);
-        $this->assertInstanceOf(SessionService::class, $di[DI::SERVICE_SESSION]);
+        $this->assertInstanceOf(CookieService::class, $di[DI::URI_SERVICE_COOKIE]);
+        $this->assertInstanceOf(SessionService::class, $di[DI::URI_SERVICE_SESSION]);
     }
 
 }
