@@ -19,7 +19,7 @@ final class TestApplication extends AbstractApplication
         return $this;
     }
 
-    public function installModules(array $modules): ApplicationInterface
+    public function installModule(string $module_class): ApplicationInterface
     {
         return $this;
     }
