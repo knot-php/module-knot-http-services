@@ -5,7 +5,7 @@ namespace KnotPhp\Module\KnotHttpService;
 
 use Throwable;
 
-use KnotLib\Kernel\Module\AbstractModule;
+use KnotLib\Kernel\Module\ModuleInterface;
 use KnotLib\Kernel\Module\ComponentTypes;
 use KnotLib\Kernel\Kernel\ApplicationInterface;
 use KnotLib\Kernel\EventStream\Channels;
@@ -15,14 +15,24 @@ use KnotLib\HttpService\CookieService;
 use KnotLib\HttpService\DI;
 use KnotLib\HttpService\SessionService;
 
-class KnotHttpServiceModule extends AbstractModule
+class KnotHttpServiceModule implements ModuleInterface
 {
+    /**
+     * Declare dependency on another modules
+     *
+     * @return array
+     */
+    public static function requiredModules() : array
+    {
+        return [];
+    }
+
     /**
      * Declare dependent on components
      *
      * @return array
      */
-    public static function requiredComponents() : array
+    public static function requiredComponentTypes() : array
     {
         return [
             ComponentTypes::DI,
