@@ -5,18 +5,17 @@ namespace KnotPhp\Module\KnotHttpService;
 
 use Throwable;
 
-use KnotLib\Kernel\Module\ComponentModule;
-use KnotLib\Kernel\Module\Components;
+use KnotLib\Kernel\Module\AbstractModule;
+use KnotLib\Kernel\Module\ComponentTypes;
 use KnotLib\Kernel\Kernel\ApplicationInterface;
 use KnotLib\Kernel\EventStream\Channels;
 use KnotLib\Kernel\EventStream\Events;
 use KnotLib\Kernel\Exception\ModuleInstallationException;
-
 use KnotLib\HttpService\CookieService;
 use KnotLib\HttpService\DI;
 use KnotLib\HttpService\SessionService;
 
-class KnotHttpServiceModule extends ComponentModule
+class KnotHttpServiceModule extends AbstractModule
 {
     /**
      * Declare dependent on components
@@ -26,9 +25,9 @@ class KnotHttpServiceModule extends ComponentModule
     public static function requiredComponents() : array
     {
         return [
-            Components::DI,
-            Components::EVENTSTREAM,
-            Components::SESSION,
+            ComponentTypes::DI,
+            ComponentTypes::EVENTSTREAM,
+            ComponentTypes::SESSION,
         ];
     }
 
@@ -39,7 +38,7 @@ class KnotHttpServiceModule extends ComponentModule
      */
     public static function declareComponentType() : string
     {
-        return Components::MODULE;
+        return ComponentTypes::SERVICE;
     }
 
     /**
