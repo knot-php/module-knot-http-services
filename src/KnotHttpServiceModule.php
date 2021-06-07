@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotPhp\Module\KnotHttpService;
+namespace knotphp\module\knothttpservice;
 
 use Throwable;
 
-use KnotLib\Kernel\Module\ModuleInterface;
-use KnotLib\Kernel\Module\ComponentTypes;
-use KnotLib\Kernel\Kernel\ApplicationInterface;
-use KnotLib\Kernel\EventStream\Channels;
-use KnotLib\Kernel\EventStream\Events;
-use KnotLib\Kernel\Exception\ModuleInstallationException;
-use KnotLib\HttpService\CookieService;
-use KnotLib\HttpService\DI;
-use KnotLib\HttpService\SessionService;
+use knotlib\kernel\module\ModuleInterface;
+use knotlib\kernel\module\ComponentTypes;
+use knotlib\kernel\kernel\ApplicationInterface;
+use knotlib\kernel\eventstream\Channels;
+use knotlib\kernel\eventstream\Events;
+use knotlib\kernel\exception\ModuleInstallationException;
+use knotlib\httpservice\CookieService;
+use knotlib\httpservice\DI;
+use knotlib\httpservice\SessionService;
 
 class KnotHttpServiceModule implements ModuleInterface
 {

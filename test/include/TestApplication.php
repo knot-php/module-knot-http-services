@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotModule\KnotHttpService\Test;
+namespace knotphp\module\knothttpservice\test;
 
-use KnotLib\Kernel\Kernel\AbstractApplication;
-use KnotLib\Kernel\Kernel\ApplicationInterface;
-use KnotLib\Kernel\Kernel\ApplicationType;
+use knotlib\kernel\kernel\AbstractApplication;
+use knotlib\kernel\kernel\ApplicationInterface;
+use knotlib\kernel\kernel\ApplicationType;
 
 final class TestApplication extends AbstractApplication
 {

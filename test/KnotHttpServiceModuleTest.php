@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotModule\KnotHttpService\Test;
+namespace knotphp\module\knothttpservice\test;
 
 use PHPUnit\Framework\TestCase;
 
-use KnotLib\HttpService\CookieService;
-use KnotLib\HttpService\DI;
-use KnotLib\HttpService\SessionService;
+use knotlib\httpservice\CookieService;
+use knotlib\httpservice\DI;
+use knotlib\httpservice\SessionService;
 
-use KnotPhp\Module\KnotDi\KnotDiModule;
-use KnotPhp\Module\NyholmPsr7\NyholmPsr7RequestModule;
-use KnotPhp\Module\KnotHttpService\KnotHttpServiceModule;
+use knotphp\module\knotdi\KnotDiModule;
+use knotphp\module\nyholmPsr7\NyholmPsr7RequestModule;
+use knotphp\module\knothttpservice\KnotHttpServiceModule;
 
 class KnotHttpServiceModuleTest extends TestCase
 {
