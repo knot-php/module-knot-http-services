@@ -12,6 +12,8 @@ use knotlib\httpservice\SessionService;
 use knotphp\module\knotdi\KnotDiModule;
 use knotphp\module\nyholmPsr7\NyholmPsr7RequestModule;
 use knotphp\module\knothttpservice\KnotHttpServiceModule;
+use knotphp\module\knothttpservice\test\classes\TestApplication;
+use knotphp\module\knothttpservice\test\classes\TestFileSystem;
 
 class KnotHttpServiceModuleTest extends TestCase
 {

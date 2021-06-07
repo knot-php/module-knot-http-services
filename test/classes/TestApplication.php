@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace knotphp\module\knothttpservice\test;
+namespace knotphp\module\knothttpservice\test\classes;
 
 use knotlib\kernel\kernel\AbstractApplication;
 use knotlib\kernel\kernel\ApplicationInterface;
