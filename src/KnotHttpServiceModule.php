@@ -78,9 +78,9 @@ class KnotHttpServiceModule implements ModuleInterface
             // fire event
             $app->eventstream()->channel(Channels::SYSTEM)->push(Events::MODULE_INSTALLED, $this);
         }
-        catch(Throwable $e)
+        catch(Throwable $ex)
         {
-            throw new ModuleInstallationException(self::class, $e->getMessage(), 0, $e);
+            throw new ModuleInstallationException(self::class, $ex->getMessage(), $ex);
         }
     }
 }
