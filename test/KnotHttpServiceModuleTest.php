@@ -5,9 +5,9 @@ namespace knotphp\module\knothttpservice\test;
 
 use PHPUnit\Framework\TestCase;
 
-use knotlib\httpservice\CookieService;
-use knotlib\httpservice\DI;
-use knotlib\httpservice\SessionService;
+use knotlib\httpservices\CookieService;
+use knotlib\httpservices\DI;
+use knotlib\httpservices\SessionService;
 
 use knotphp\module\knotdi\KnotDiModule;
 use knotphp\module\nyholmPsr7\NyholmPsr7RequestModule;

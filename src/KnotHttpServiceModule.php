@@ -11,9 +11,9 @@ use knotlib\kernel\kernel\ApplicationInterface;
 use knotlib\kernel\eventstream\Channels;
 use knotlib\kernel\eventstream\Events;
 use knotlib\kernel\exception\ModuleInstallationException;
-use knotlib\httpservice\CookieService;
-use knotlib\httpservice\DI;
-use knotlib\httpservice\SessionService;
+use knotlib\httpservices\CookieService;
+use knotlib\httpservices\DI;
+use knotlib\httpservices\SessionService;
 
 class KnotHttpServiceModule implements ModuleInterface
 {
